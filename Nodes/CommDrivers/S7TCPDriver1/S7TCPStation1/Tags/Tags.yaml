@@ -1,0 +1,34 @@
+Name: Tags
+Id: g=cd36af4291ef0973086fcbf0e382a5da
+Type: FolderType
+Children:
+- Name: sv11Status
+  Id: g=d8b118969e09462e1957c2d0eb8fc1ae
+  Type: S7TCPTag
+  DataType: UInt16
+  Children:
+  - Name: MemoryArea
+    Id: g=0206cdd51ecc2ff22190e2d4f6575928
+    Type: BaseDataVariableType
+    DataType: MemoryArea
+  - Name: ArrayUpdateMode
+    Id: g=850dd7926cc503671e02b1f39c4485bf
+    Type: BaseDataVariableType
+    DataType: TagArrayUpdateMode
+    Value: 1
+  - Name: BlockNumber
+    Id: g=49ac7fba4b22856a997d8eba915a1689
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 202
+  - Name: Position
+    Id: g=17f315775a149160f88319bfbfcecb58
+    Type: BaseDataVariableType
+    DataType: UInt32
+    Value: 42
+- Name: S7TCPTag1
+  Id: g=c3ba7e15d36ad4b259f72dae0d942dea
+  Type: S7TCPTag
+  DataType: Int32
+  ValueRank: OneDimension
+  ArrayDimensions: [50]

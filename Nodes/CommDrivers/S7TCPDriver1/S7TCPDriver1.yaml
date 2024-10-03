@@ -1,0 +1,18 @@
+Name: S7TCPDriver1
+Id: g=1a5896c3a69a65a81dc3a3025015cf10
+Type: S7TCPDriver
+Children:
+- Name: LocalDeviceId
+  Id: g=6874af47da9f3bf00a87ae79bf4126e3
+  Type: BaseDataVariableType
+  DataType: Byte
+  Value: 1
+- Name: LocalRack
+  Id: g=c76e914503952fe669b38a0e727fedf3
+  Type: BaseDataVariableType
+  DataType: Byte
+- Name: LocalSlot
+  Id: g=49450a0783c9168bfce46b65f32e0162
+  Type: BaseDataVariableType
+  DataType: Byte
+- File: S7TCPStation1/S7TCPStation1.yaml

@@ -29,16 +29,28 @@ Project:
    Uri: 'urn:FTOptix:Retentivity'
    Module: FTOptix.Retentivity
    Version: 1.0
+  8:
+   Uri: 'urn:FTOptix:CommunicationDriver'
+   Module: FTOptix.CommunicationDriver
+   Version: 2.1
+  9:
+   Uri: 'urn:FTOptix:S7TCP'
+   Module: FTOptix.S7TCP
+   Version: 1.0
+  10:
+   Uri: 'urn:FTOptix:OPCUAServer'
+   Module: FTOptix.OPCUAServer
+   Version: 1.1
  Statistics:
   TotalNodeCount: 456
-  Objects: 135
+  Objects: 129
   ObjectTypes: 2
-  Variables: 319
+  Variables: 325
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
-  References: 4
+  References: 8
   ReferenceTypes: 0
-  Files: 22
+  Files: 27
  Nodes:
  - File: Nodes/LastTech_demo.yaml

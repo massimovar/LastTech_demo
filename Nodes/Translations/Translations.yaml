@@ -1,7 +1,9 @@
 Name: Translations
+Id: g=4b40529a0b27446578ccdbfc02568726
 Type: TranslationsCategoryFolder
 Children:
 - Name: LocalizationDictionary1
+  Id: g=61761f143e1c823f9329b3b3f64139c2
   Type: LocalizationDictionary
   DataType: String
   ValueRank: OneOrMoreDimensions
@@ -9,7 +11,7 @@ Children:
   Value: 
    {
     "Type": 12,
-    "Dimensions": [19,2],
+    "Dimensions": [20,2],
     "Body": [
      "","en-US",
      "Create","Create",
@@ -29,6 +31,7 @@ Children:
      "PasswordAlreadyUsed","Password already used in the past",
      "PasswordTooShort","Password too short",
      "UnsupportedOperation","Unsupported operation",
-     "ChangesAppliedSuccessfully","Changes applied successfully"
+     "ChangesAppliedSuccessfully","Changes applied successfully",
+     "Connected to Station:","Connected to Station:"
     ]
    }

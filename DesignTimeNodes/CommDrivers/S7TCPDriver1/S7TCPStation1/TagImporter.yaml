@@ -1,0 +1,22 @@
+Name: TagImporter
+Id: g=89455f8521269d7e3e5b7904cf607327
+Type: S7TagImporter
+OwnerId: ns=2;g=1441437165d95887ac623a055a6c145f
+Children:
+- Name: IgnoredPLCItems
+  Id: g=89472d41badc00cee4442a3eb8a5cd14
+  Type: BaseDataVariableType
+  DataType: BaseDataType
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+- Name: IgnoredHMIItems
+  Id: g=9c741972964e2423043d405a7a5a0bed
+  Type: BaseDataVariableType
+  DataType: NodeId
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+- Name: Mode
+  Id: g=3f991089b5149bf90bebe0c8e3b02759
+  Type: BaseDataVariableType
+  DataType: FetchProviderModes
+  Value: 1

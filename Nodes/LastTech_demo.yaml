@@ -1,55 +1,69 @@
 Name: LastTech_demo
+Id: g=ec661ec2ec73209b8c6ef9d5ca41a1a2
 Type: ProjectFolder
 Children:
 - Name: Localization
+  Id: g=8cc621dbd91790a843d3bb42641d3e29
   Type: PropertyGroup
   Children:
   - Name: Locales
+    Id: g=2c0a994b372001f0854b687dcf65f1db
     Type: BaseDataVariableType
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
   - Name: LocaleFallbackList
+    Id: g=9d15a38c0a5b0ae9cb27e17d0281ff18
     Type: BaseDataVariableType
     DataType: LocaleId
     ValueRank: OneDimension
     ArrayDimensions: [0]
     Value: ["en-US"]
 - Name: Authentication
+  Id: g=515c9a3756fc65c2268163e4e6e57176
   Type: PropertyGroup
   Children:
   - Name: DefaultUserFolder
+    Id: g=2779c8b9fd8b2f35f7527c14d5cc5af0
     Type: NodePointer
     DataType: NodeId
     Value: "/Objects/LastTech_demo/Security/Users"
     Children:
     - Name: Kind
+      Id: g=b36643b62e8c1187ecbf6920821b6cb3
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
   - Name: AuthenticationMode
+    Id: g=674f7dd9434e2a7653bd840d21572d78
     Type: BaseDataVariableType
     DataType: AuthenticationMode
     Value: 3
 - Name: PasswordPolicy
+  Id: g=1f6e9544b99ae1d8d95b5e1156156acd
   Type: PasswordPolicy
   Children:
   - Name: MaximumPasswordAge
+    Id: g=1ab482df679390ff1ae17b0206d74d40
     Type: BaseDataVariableType
     DataType: UInt16
   - Name: EnforcePasswordHistory
+    Id: g=88211dac531d2b9e85d9f7e3f86e79e0
     Type: BaseDataVariableType
     DataType: Byte
     Value: 1
   - Name: MinimumPasswordAge
+    Id: g=332f224f5921968767d27a9ad6f32b04
     Type: BaseDataVariableType
     DataType: UInt16
   - Name: MinimumPasswordLength
+    Id: g=00f8e50a1871fdc5401c6748c2a1cf90
     Type: BaseDataVariableType
     DataType: Byte
     Value: 8
 - Name: AlarmConfiguration
+  Id: g=73d253590e3fd316a18ad59be48be185
   Type: PropertyGroup
 - File: UI/UI.yaml
 - File: Model/Model.yaml

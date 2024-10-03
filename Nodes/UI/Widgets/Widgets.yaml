@@ -1,4 +1,5 @@
 Name: Widgets
+Id: g=6dd6154eaf7d998eb5ba03e9ee610fe1
 Type: FolderType
 Children:
 - Name: Valve
@@ -7,476 +8,657 @@ Children:
   ReferenceType: HasComponent
   Children:
   - Name: Width
+    Id: g=6cb08165d139596f3dd81cab136c9119
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
     Value: 100.0
   - Name: Height
+    Id: g=916e8d9de567f3b4b29c727c969ebb32
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
     Value: 100.0
   - Name: BorderThickness
+    Id: g=6ab08e78e78a674c0953da539f758b99
     Type: BaseDataVariableType
     DataType: Size
     ModellingRule: Optional
   - Name: ValveImage
+    Id: g=27f30f706500a854b9b716b3fcadf4a0
     Type: AdvancedSVGImage
     Children:
     - Name: SVGElementProperties
+      Id: g=b9da1e0011d0d8e0369e935e8394af9f
       Type: BaseObjectType
       Children:
       - Name: AdvancedSVGImageProperty1
+        Id: g=46f4281ec224d7a764da059bd60fb0a2
         Type: AdvancedSVGImageElementProperty
         Children:
         - Name: ID
+          Id: g=932c0f50df1be3a7618c6ee437933d49
           Type: BaseDataVariableType
           DataType: String
           Value: "leftTriangle"
         - Name: Property
+          Id: g=2344ac4994fce92c8b7f3d17b3e1f53e
           Type: BaseDataVariableType
           DataType: AdvancedSVGImagePropertyClass
         - Name: Value
+          Id: g=032ec176ae26ff5f48904040ad4b6667
           Type: BaseDataVariableType
           DataType: Color
           Value: "#808080"
           Children:
           - Name: ConditionalConverter1
+            Id: g=a4374408944942b012fd2bc62ff84d4d
             Type: ConditionalConverter
             Children:
             - Name: Condition
+              Id: g=f398fecbecc944011b2255156e3e3df2
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
               Children:
               - Name: DynamicLink
+                Id: g=a61bf610eb48fda7bb1ac5e2bcb2edd6
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "../../../../../../Alarm"
             - Name: TrueValue
+              Id: g=6f5b0ce7d3deda095751224e9ee83103
               Type: BaseDataVariableType
               DataType: Color
               ReferenceType: HasParameter
               ModellingRule: Optional
               Value: "#ff0000"
             - Name: FalseValue
+              Id: g=1abb7fa42ab2bf9b29a463f02e5696a2
               Type: BaseDataVariableType
               DataType: Color
               ReferenceType: HasParameter
               Children:
               - Name: ConditionalConverter1
+                Id: g=09cd2ab195dacc4084c0784ac3a729e0
                 Type: ConditionalConverter
                 Children:
                 - Name: Condition
+                  Id: g=17e7c2902d2b697d46100e3d581c6298
                   Type: BaseDataVariableType
                   DataType: Boolean
                   ReferenceType: HasSource
                   Children:
                   - Name: DynamicLink
+                    Id: g=4c3ab24847a477726c98e8378f686126
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "../../../../../../../../Open"
                 - Name: TrueValue
+                  Id: g=c8eb343fc0d02d68d011d2a18de564a0
                   Type: BaseDataVariableType
                   DataType: Color
                   ReferenceType: HasParameter
                   ModellingRule: Optional
                   Value: "#00ff00"
                 - Name: FalseValue
+                  Id: g=58d5a6258593ea692635a03689a0a9a9
                   Type: BaseDataVariableType
                   DataType: Color
                   ReferenceType: HasParameter
                   ModellingRule: Optional
                   Value: "#808080"
       - Name: AdvancedSVGImageProperty2
+        Id: g=9f17498e7f187e72ca8268291c623f39
         Type: AdvancedSVGImageElementProperty
         Children:
         - Name: ID
+          Id: g=6c6a40a12722d2e6196c1cc6afbd7986
           Type: BaseDataVariableType
           DataType: String
           Value: "rightTriangle"
         - Name: Property
+          Id: g=bf7b9f123441bad55a58cbb6de40d02e
           Type: BaseDataVariableType
           DataType: AdvancedSVGImagePropertyClass
         - Name: Value
+          Id: g=416d0426a9aca26070b908dad4eacda6
           Type: BaseDataVariableType
           DataType: Color
           Value: "#808080"
           Children:
           - Name: ConditionalConverter1
+            Id: g=97d20cc096e7665063e1e9f9e084515e
             Type: ConditionalConverter
             Children:
             - Name: Condition
+              Id: g=16bb87ed3f9b46ef1f56c2433fbdc5a1
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
               Children:
               - Name: DynamicLink
+                Id: g=513e57cf58d62ac556b53adf1a75c571
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "../../../../../../Alarm"
             - Name: TrueValue
+              Id: g=35188761f5a5a7e819a621104a12a1d1
               Type: BaseDataVariableType
               DataType: Color
               ReferenceType: HasParameter
               ModellingRule: Optional
               Value: "#ff0000"
             - Name: FalseValue
+              Id: g=6c4444df6aca18a9bd13dc4c9f43a585
               Type: BaseDataVariableType
               DataType: Color
               ReferenceType: HasParameter
               Children:
               - Name: ConditionalConverter1
+                Id: g=1d6f99bd33dcb3900688f8ecbebe58d5
                 Type: ConditionalConverter
                 Children:
                 - Name: Condition
+                  Id: g=f87e20cf0db8be0d25d7b235024b3e11
                   Type: BaseDataVariableType
                   DataType: Boolean
                   ReferenceType: HasSource
                   Children:
                   - Name: DynamicLink
+                    Id: g=6317c2a98c645cf357ce13baa0419146
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "../../../../../../../../Open"
                 - Name: TrueValue
+                  Id: g=07d4f32be912181a0b5de89f6d9112d1
                   Type: BaseDataVariableType
                   DataType: Color
                   ReferenceType: HasParameter
                   ModellingRule: Optional
                   Value: "#00ff00"
                 - Name: FalseValue
+                  Id: g=da7d2f1d369dab984440cb2a64815ce3
                   Type: BaseDataVariableType
                   DataType: Color
                   ReferenceType: HasParameter
                   ModellingRule: Optional
                   Value: "#808080"
       - Name: AdvancedSVGImageProperty3
+        Id: g=868c20b7051f62d9439e544e9fb49812
         Type: AdvancedSVGImageElementProperty
         Children:
         - Name: ID
+          Id: g=9e7bf5d03663a4ffdf33daecf580a84e
           Type: BaseDataVariableType
           DataType: String
           Value: "semicircle"
         - Name: Property
+          Id: g=229ea9d7e69e5dd2ce51c3a25a09033e
           Type: BaseDataVariableType
           DataType: AdvancedSVGImagePropertyClass
         - Name: Value
+          Id: g=44198f83fcef610995f04bbacf4bdf38
           Type: BaseDataVariableType
           DataType: Color
           Value: "#808080"
           Children:
           - Name: ConditionalConverter1
+            Id: g=cd23b1ad470126d3eec429661f52102b
             Type: ConditionalConverter
             Children:
             - Name: Condition
+              Id: g=7affe1a5e1503a1ec9a9f29c9150e570
               Type: BaseDataVariableType
               DataType: Boolean
               ReferenceType: HasSource
               Children:
               - Name: DynamicLink
+                Id: g=3aa021b6d220fcc22a73d66d2c0b421f
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "../../../../../../Alarm"
             - Name: TrueValue
+              Id: g=da6dd4735c6029090d8a975e31b8d2ae
               Type: BaseDataVariableType
               DataType: Color
               ReferenceType: HasParameter
               ModellingRule: Optional
               Value: "#ff0000"
             - Name: FalseValue
+              Id: g=29bef4d9ef03e055a4da5d62e4b297e5
               Type: BaseDataVariableType
               DataType: Color
               ReferenceType: HasParameter
               Children:
               - Name: ConditionalConverter1
+                Id: g=7a27126efc1e1eb9da46b403e920083e
                 Type: ConditionalConverter
                 Children:
                 - Name: Condition
+                  Id: g=754ae9faf3dd8f615d14409cb72ee56e
                   Type: BaseDataVariableType
                   DataType: Boolean
                   ReferenceType: HasSource
                   Children:
                   - Name: DynamicLink
+                    Id: g=df2e4d67e7e1b80cdd6af4071bfc91cf
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "../../../../../../../../Active"
                 - Name: TrueValue
+                  Id: g=d4bb23d407608b05cfb91b2b195aa067
                   Type: BaseDataVariableType
                   DataType: Color
                   ReferenceType: HasParameter
                   ModellingRule: Optional
                   Value: "#00ff00"
                 - Name: FalseValue
+                  Id: g=432c4547e1c6597ed8b8dac5bcba2ff0
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "#808080"
+      - Name: AdvancedSVGImageProperty4
+        Id: g=71278f5b17490174b97e038bb2f99259
+        Type: AdvancedSVGImageElementProperty
+        Children:
+        - Name: ID
+          Id: g=b7ee1f07619304d2e50f92e15c701015
+          Type: BaseDataVariableType
+          DataType: String
+          Value: "line"
+        - Name: Property
+          Id: g=172d59fd8884ac7c0d14147643d72a97
+          Type: BaseDataVariableType
+          DataType: AdvancedSVGImagePropertyClass
+        - Name: Value
+          Id: g=d4bf3b932c2a8a92936e5d0b1483a8a6
+          Type: BaseDataVariableType
+          DataType: Color
+          Value: "#808080"
+          Children:
+          - Name: ConditionalConverter1
+            Id: g=302b6b6f1a2d4cd1505c6c6a5eb8b2dc
+            Type: ConditionalConverter
+            Children:
+            - Name: Condition
+              Id: g=d9a19984eea328f10255cd22847d01dc
+              Type: BaseDataVariableType
+              DataType: Boolean
+              ReferenceType: HasSource
+              Children:
+              - Name: DynamicLink
+                Id: g=4ae3a626b4e9a4029a721596933ada68
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "../../../../../../Alarm"
+            - Name: TrueValue
+              Id: g=5854b5bcbea19af975aeb707418f7b67
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              ModellingRule: Optional
+              Value: "#ff0000"
+            - Name: FalseValue
+              Id: g=b50657c788650489f29aa3a8ef8472ac
+              Type: BaseDataVariableType
+              DataType: Color
+              ReferenceType: HasParameter
+              Children:
+              - Name: ConditionalConverter1
+                Id: g=b3e79126e1b966be77f61b32d8986218
+                Type: ConditionalConverter
+                Children:
+                - Name: Condition
+                  Id: g=6d8b760f4e1bf3cfb7681ec6eea54d82
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  ReferenceType: HasSource
+                  Children:
+                  - Name: DynamicLink
+                    Id: g=bf4aadae1e92d55cb281dbac7c96e1cb
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "../../../../../../../../Active"
+                - Name: TrueValue
+                  Id: g=348b033baacfbc507817e49c0fac0199
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  ReferenceType: HasParameter
+                  ModellingRule: Optional
+                  Value: "#00ff00"
+                - Name: FalseValue
+                  Id: g=4f772083438c78bdc464319d2c5687e5
                   Type: BaseDataVariableType
                   DataType: Color
                   ReferenceType: HasParameter
                   ModellingRule: Optional
                   Value: "#808080"
     - Name: Path
+      Id: g=0fce8a36d264c422239f679ab4b8742e
       Type: BaseDataVariableType
       DataType: ResourceUri
-      Value: "ns=7;%PROJECTDIR%/imgs/valve_2.svg"
+      Value: "ns=7;%PROJECTDIR%/imgs/valve.svg"
     - Class: Reference
       Target: ns=3;i=1360
       Direction: Forward
     - Name: Width
+      Id: g=b1aff295dc33cbd129b2b7f7ac330c5a
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 50.0
     - Name: Height
+      Id: g=bdb7987b9fef6d6203fae348834104e2
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 50.0
     - Name: HorizontalAlignment
+      Id: g=01f72450ace6c10d4aa05657709c5b9a
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
       Value: 3
     - Name: VerticalAlignment
+      Id: g=c6c677e1ea77f756c97877e61748ff45
       Type: BaseVariableType
       DataType: VerticalAlignment
       ModellingRule: Optional
       Value: 3
   - Name: Simulation
+    Id: g=510099547ee6b484a2d957d8bfa9ad5b
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=efe1b0f9f23cf305005d9ee2fb5d9d77
       Type: DynamicLink
       DataType: NodePath
       Value: "../ValveStatus.10"
       Children:
       - Name: Mode
+        Id: g=31975e5cc96e31932f7e54b12ef54d2a
         Type: BaseVariableType
         DataType: DynamicLinkMode
         ModellingRule: Optional
         Value: 2
   - Name: FillColor
+    Id: g=daef4960bef805de9dab3a5140398d10
     Type: BaseDataVariableType
     DataType: Color
     Value: "#ffffff"
     Children:
     - Name: ConditionalConverter1
+      Id: g=b8e8816d70efd2dd5f2b440105b1c52b
       Type: ConditionalConverter
       Children:
       - Name: Condition
+        Id: g=7960dacd97696dbf7deae469f1b263c1
         Type: BaseDataVariableType
         DataType: Boolean
         ReferenceType: HasSource
         Children:
         - Name: DynamicLink
+          Id: g=08dbc34a6fb7b21b3d130140e543c322
           Type: DynamicLink
           DataType: NodePath
           Value: "../../../Simulation"
       - Name: TrueValue
+        Id: g=092de982509d494bb452487b3d1c0ecd
         Type: BaseDataVariableType
         DataType: Color
         ReferenceType: HasParameter
         ModellingRule: Optional
         Value: "#0000ff"
       - Name: FalseValue
+        Id: g=7c79c74ee50b27ef9f9f23e53a37d92a
         Type: BaseDataVariableType
         DataType: Color
         ReferenceType: HasParameter
         ModellingRule: Optional
         Value: "#ffffff00"
   - Name: BorderColor
+    Id: g=674c3c9bfef4c7fe3587306692bcb5ca
     Type: BaseDataVariableType
     DataType: Color
     Value: "#000000"
   - Name: Alarm
+    Id: g=0eaef06fabf938f0d643d5ec4ee13971
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=cfb6da4d4a12a31aa7dcb3a9aef348bd
       Type: DynamicLink
       DataType: NodePath
       Value: "../ValveStatus.15"
       Children:
       - Name: Mode
+        Id: g=c40df62434b6559a701268a9b67bbbd6
         Type: BaseVariableType
         DataType: DynamicLinkMode
         ModellingRule: Optional
         Value: 2
   - Name: Open
+    Id: g=8a76328c85c1f81a51284e302a33da4b
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=94849d1c57ef5df27d94f7c4f3f5fc6c
       Type: DynamicLink
       DataType: NodePath
       Value: "../ValveStatus.12"
       Children:
       - Name: Mode
+        Id: g=ea55ebad84316fdfe1a63d5d8254cd77
         Type: BaseVariableType
         DataType: DynamicLinkMode
         ModellingRule: Optional
         Value: 2
   - Name: Active
+    Id: g=7d19ea0456663c05ac996b0be55669b6
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=2148c95402b424c33fabd4092bc948a8
       Type: DynamicLink
       DataType: NodePath
       Value: "../ValveStatus.14"
       Children:
       - Name: Mode
+        Id: g=96a0c1a848e1057fe8ff5c035e1f769d
         Type: BaseVariableType
         DataType: DynamicLinkMode
         ModellingRule: Optional
         Value: 2
   - Name: Automatic
+    Id: g=f454e7780fc4f7ef726d1ca27ebfb6ab
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=7b5da1d8d1d8cdce10837613cbe641ca
       Type: DynamicLink
       DataType: NodePath
       Value: "../ValveStatus.8"
       Children:
       - Name: Mode
+        Id: g=05c46f1ac101ae0b0793a39cd0e6e69a
         Type: BaseVariableType
         DataType: DynamicLinkMode
         ModellingRule: Optional
         Value: 2
   - Name: InterlockOpen
+    Id: g=f5a044dabd8be3f0a42344cfebdebb6d
     Type: BaseDataVariableType
     DataType: Boolean
     Children:
     - Name: DynamicLink
+      Id: g=f1983cc87f14d9ccd7aa6423b23f09ac
       Type: DynamicLink
       DataType: NodePath
       Value: "../ValveStatus.0"
       Children:
       - Name: Mode
+        Id: g=16e00a4b6384835d171b3d3af3168ab9
         Type: BaseVariableType
         DataType: DynamicLinkMode
         ModellingRule: Optional
         Value: 2
   - Name: InterlockClose
+    Id: g=34fe24c884cf90c68a95bcb91c1116bc
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
     Children:
     - Name: DynamicLink
+      Id: g=ec3c7d13c1636987d9864c6c91f20c48
       Type: DynamicLink
       DataType: NodePath
       Value: "../ValveStatus.4"
       Children:
       - Name: Mode
+        Id: g=d2496ff6a1e06596ded60c7bf4df5ae7
         Type: BaseVariableType
         DataType: DynamicLinkMode
         ModellingRule: Optional
         Value: 2
   - Name: ManualIcon
+    Id: g=7a063e28d3f52390f7ca02ac58ae2795
     Type: Image
     Children:
     - Name: Path
+      Id: g=86dfde67010ac048faf3e05febfbd46a
       Type: BaseDataVariableType
       DataType: ResourceUri
       Value: "ns=7;%PROJECTDIR%/res/Hand_ELEMENT_1.svg"
     - Name: Width
+      Id: g=55a60a34af324fcb33230e8ab2280e79
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 16.0
     - Name: Height
+      Id: g=70843d3ddbe1a721f91909598cacc0ab
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 16.0
     - Name: DynamicColor
+      Id: g=9c28564f721d9608ed83e36175a65bf5
       Type: BaseDataVariableType
       DataType: Color
       Value: "#ffa500"
     - Name: Visible
+      Id: g=169e76aebb2836db0e341c6b9272faf0
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
       Children:
       - Name: ExpressionEvaluator1
+        Id: g=6dbad84859b465fd26f5818e66c085e2
         Type: ExpressionEvaluator
         Children:
         - Name: Expression
+          Id: g=47883f3bbe2c61c40cf7c59bd02b9087
           Type: BaseDataVariableType
           DataType: String
           ReferenceType: HasParameter
           ModellingRule: Optional
           Value: "!{#Automatic}"
         - Name: ns=2;SourceAutomatic
+          Id: g=011aac3f89b31ec21da33ad5524be9b2
           Type: BaseDataVariableType
           DataType: BaseDataType
           ReferenceType: HasSource
           Children:
           - Name: DynamicLink
+            Id: g=16648183f7fdbd758d9f3146cb59348c
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../Automatic"
   - Name: Interlock
+    Id: g=c85c493c6e16d2cf848e09c84b6073cb
     Type: Image
     Children:
     - Name: Path
+      Id: g=533098e15ccb472f772ebf244aa87826
       Type: BaseDataVariableType
       DataType: ResourceUri
       Value: "ns=7;%PROJECTDIR%/res/LockSymbol_fill.svg"
     - Name: Width
+      Id: g=01bde64948a912a2f9cdf1ff6ddf951c
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 12.45300006866455
     - Name: Height
+      Id: g=d2682abc78c7e038ce72abeba1cee85c
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
       Value: 18.0
     - Name: DynamicColor
+      Id: g=ecf127b2757c3312bec2cd27fd62e8b4
       Type: BaseDataVariableType
       DataType: Color
       Value: "#ffa500"
     - Name: HorizontalAlignment
+      Id: g=5906f986a2bdeefde3467fbb21795818
       Type: BaseVariableType
       DataType: HorizontalAlignment
       ModellingRule: Optional
       Value: 1
     - Name: Visible
+      Id: g=ee44a4a57a614be10557fceb85bcbf5b
       Type: BaseDataVariableType
       DataType: Boolean
       Value: true
       Children:
       - Name: ExpressionEvaluator1
+        Id: g=b28099012249ff38f38ce7caea34e866
         Type: ExpressionEvaluator
         Children:
         - Name: Expression
+          Id: g=604758c928bde052ccb518e84976b281
           Type: BaseDataVariableType
           DataType: String
           ReferenceType: HasParameter
           ModellingRule: Optional
           Value: "!{#interlockOpen} || !{#interlockClose}"
         - Name: ns=2;SourceinterlockOpen
+          Id: g=92abd471eb63921e8683b7b3f936967b
           Type: BaseDataVariableType
           DataType: BaseDataType
           ReferenceType: HasSource
           Children:
           - Name: DynamicLink
+            Id: g=20b5526dfb9d40c60d886d162c2192d6
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../InterlockOpen"
         - Name: ns=2;SourceinterlockClose
+          Id: g=5dea1dbdfedc8b3579efa79ab0cde817
           Type: BaseDataVariableType
           DataType: BaseDataType
           ReferenceType: HasSource
           Children:
           - Name: DynamicLink
+            Id: g=1c45638ac72978684fe6bd6744167238
             Type: DynamicLink
             DataType: NodePath
             Value: "../../../../InterlockClose"
   - Name: ValveStatus
+    Id: g=05c3d3334c5eca4332af0d643c4427c1
     Type: BaseDataVariableType
     DataType: Int16
   - Name: ns=4;LockPassword
+    Id: g=087e103c01b655b5ed86d68eb305ef95
     Type: BaseDataVariableType
     DataType: PasswordHash
     AccessLevel: Read
@@ -492,6 +674,7 @@ Children:
       }
      }
   - Name: ns=4;LibraryReference
+    Id: g=bb712698cb99f3e28c792659b32cf5fb
     Type: ObjectLibraryReference
     DataType: ObjectLibraryReferenceDataType
     ModellingRule: None
@@ -508,3 +691,12 @@ Children:
        "highestIgnoredVersion": 0
       }
      }
+  - Name: HitTestVisible
+    Id: g=1b86953353cec09caadf5ed09fdfaf0e
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+  - Name: ValveId
+    Id: g=a0a261f1f7892438da8a130ac80ee988
+    Type: BaseDataVariableType
+    DataType: Int16

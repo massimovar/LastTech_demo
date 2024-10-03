@@ -1,0 +1,73 @@
+Name: S7TCPStation1
+Id: g=1441437165d95887ac623a055a6c145f
+Type: S7TCPStation
+Children:
+- Name: MaximumJobSizeInBytes
+  Id: g=8f232c7da7cc5e7fcf4ec0abd1c2658c
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 243
+- Name: MaximumGapInBytes
+  Id: g=76eab09bf3db1ce85fd0929e825dfddc
+  Type: BaseDataVariableType
+  DataType: UInt32
+  Value: 4
+- Name: IPAddress
+  Id: g=1cdbf3a649cdfe90b25222575caace2e
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "192.168.100.150"
+- Name: Port
+  Id: g=6792b5645e3e96592ea49bfb20d12045
+  Type: BaseDataVariableType
+  DataType: UInt16
+  Value: 102
+- Name: Timeout
+  Id: g=a4e209c328377186baa7a42d736d2699
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:5.0000000"
+- Name: RemoteDeviceId
+  Id: g=663aa9353d40be684c7dfa4cacc10c8a
+  Type: BaseDataVariableType
+  DataType: Byte
+  Value: 1
+- Name: RemoteRack
+  Id: g=ba276c71cbd232177468f348ab67489a
+  Type: BaseDataVariableType
+  DataType: Byte
+- Name: RemoteSlot
+  Id: g=9ce441b39696481dde448ab9f0639528
+  Type: BaseDataVariableType
+  DataType: Byte
+  Value: 1
+- Name: OperationCode
+  Id: g=c89a030e3ca1213accd23a7600730be0
+  Type: BaseDataVariableType
+  DataType: CommunicationOperationCode
+  AccessLevel: Read
+- Class: Reference
+  Target: ns=8;i=29
+  Direction: Forward
+- Class: Reference
+  Target: ns=8;i=30
+  Direction: Forward
+- Class: Reference
+  Target: ns=8;i=67
+  Direction: Forward
+- Class: Reference
+  Target: ns=8;i=31
+  Direction: Forward
+- Class: Reference
+  Target: ns=8;i=94
+  Direction: Forward
+- Class: Reference
+  Target: ns=8;i=96
+  Direction: Forward
+- File: Tags/Tags.yaml
+- Name: Types
+  Id: g=f70235a13ec00fc5e05c92a3113ba6a2
+  Type: FolderType
+  Children:
+  - File: DataTypes/DataTypes.yaml
+  - File: VariableTypes/VariableTypes.yaml
