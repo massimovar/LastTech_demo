@@ -230,30 +230,962 @@ Children:
       Type: DynamicLink
       DataType: NodePath
       Value: "/Objects/LastTech_demo@BrowseName"
-  - Name: LED1
-    Type: Led
+  - Name: Valve1
+    Type: Valve
     Children:
-    - Name: Active
+    - Name: ValveImage
+      Type: AdvancedSVGImage
+      Children:
+      - Name: SVGElementProperties
+        Type: BaseObjectType
+        Children:
+        - Name: AdvancedSVGImageProperty1
+          Type: AdvancedSVGImageElementProperty
+          Children:
+          - Name: ID
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "leftTriangle"
+          - Name: Property
+            Type: BaseDataVariableType
+            DataType: AdvancedSVGImagePropertyClass
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#808080"
+            Children:
+            - Name: ConditionalConverter1
+              Type: ConditionalConverter
+              Children:
+              - Name: Condition
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../Alarm"
+              - Name: FalseValue
+                Type: BaseDataVariableType
+                DataType: Color
+                ReferenceType: HasParameter
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../Open"
+        - Name: AdvancedSVGImageProperty2
+          Type: AdvancedSVGImageElementProperty
+          Children:
+          - Name: ID
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "rightTriangle"
+          - Name: Property
+            Type: BaseDataVariableType
+            DataType: AdvancedSVGImagePropertyClass
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#808080"
+            Children:
+            - Name: ConditionalConverter1
+              Type: ConditionalConverter
+              Children:
+              - Name: Condition
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../Alarm"
+              - Name: FalseValue
+                Type: BaseDataVariableType
+                DataType: Color
+                ReferenceType: HasParameter
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../Open"
+        - Name: AdvancedSVGImageProperty3
+          Type: AdvancedSVGImageElementProperty
+          Children:
+          - Name: ID
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "semicircle"
+          - Name: Property
+            Type: BaseDataVariableType
+            DataType: AdvancedSVGImagePropertyClass
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#808080"
+            Children:
+            - Name: ConditionalConverter1
+              Type: ConditionalConverter
+              Children:
+              - Name: Condition
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../Alarm"
+              - Name: FalseValue
+                Type: BaseDataVariableType
+                DataType: Color
+                ReferenceType: HasParameter
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../Active"
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/imgs/valve_2.svg"
+      - Class: Reference
+        Target: ns=3;i=1360
+        Direction: Forward
+    - Name: Simulation
       Type: BaseDataVariableType
       DataType: Boolean
-    - Name: Width
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
-    - Name: Height
-      Type: BaseVariableType
-      DataType: Size
-      ModellingRule: Optional
-      Value: 50.0
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.10"
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ffffff"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Simulation"
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 710.0
+      Value: 60.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 290.0
+      Value: 40.0
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#000000"
+    - Name: Alarm
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.15"
+    - Name: Open
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.12"
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.14"
+    - Name: Automatic
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.8"
+    - Name: InterlockOpen
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.0"
+    - Name: InterlockClose
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.4"
+    - Name: ManualIcon
+      Type: Image
+      Children:
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/res/Hand_ELEMENT_1.svg"
+      - Name: DynamicColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffa500"
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: SourceAutomatic
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Automatic"
+    - Name: Interlock
+      Type: Image
+      Children:
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/res/LockSymbol_fill.svg"
+      - Name: DynamicColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffa500"
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: SourceinterlockOpen
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../InterlockOpen"
+          - Name: SourceinterlockClose
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../InterlockClose"
+    - Name: ValveStatus
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: LockPassword
+      Type: BaseDataVariableType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: 
+       {
+        "TypeId": {
+         "Id": 252,
+         "Namespace": 1
+        },
+        "Body": {
+         "Hash": [23,183,28,201,222,143,8,65,190,114,84,33,52,87,0,85,100,94,188,193,198,204,2,19,232,148,156,140,37,51,156,52],
+         "Salt": [23,154,53,55,46,172,42,130,145,42,49,197,229,133,6,198,78,33,106,16,76,30,1,150,19,156,72,235,27,240,121,12]
+        }
+       }
+  - Name: Valve2
+    Type: Valve
+    Children:
+    - Name: ValveImage
+      Type: AdvancedSVGImage
+      Children:
+      - Name: SVGElementProperties
+        Type: BaseObjectType
+        Children:
+        - Name: AdvancedSVGImageProperty1
+          Type: AdvancedSVGImageElementProperty
+          Children:
+          - Name: ID
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "leftTriangle"
+          - Name: Property
+            Type: BaseDataVariableType
+            DataType: AdvancedSVGImagePropertyClass
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#808080"
+            Children:
+            - Name: ConditionalConverter1
+              Type: ConditionalConverter
+              Children:
+              - Name: Condition
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../Alarm"
+              - Name: FalseValue
+                Type: BaseDataVariableType
+                DataType: Color
+                ReferenceType: HasParameter
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../Open"
+        - Name: AdvancedSVGImageProperty2
+          Type: AdvancedSVGImageElementProperty
+          Children:
+          - Name: ID
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "rightTriangle"
+          - Name: Property
+            Type: BaseDataVariableType
+            DataType: AdvancedSVGImagePropertyClass
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#808080"
+            Children:
+            - Name: ConditionalConverter1
+              Type: ConditionalConverter
+              Children:
+              - Name: Condition
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../Alarm"
+              - Name: FalseValue
+                Type: BaseDataVariableType
+                DataType: Color
+                ReferenceType: HasParameter
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../Open"
+        - Name: AdvancedSVGImageProperty3
+          Type: AdvancedSVGImageElementProperty
+          Children:
+          - Name: ID
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "semicircle"
+          - Name: Property
+            Type: BaseDataVariableType
+            DataType: AdvancedSVGImagePropertyClass
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#808080"
+            Children:
+            - Name: ConditionalConverter1
+              Type: ConditionalConverter
+              Children:
+              - Name: Condition
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../Alarm"
+              - Name: FalseValue
+                Type: BaseDataVariableType
+                DataType: Color
+                ReferenceType: HasParameter
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../Active"
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/imgs/valve_2.svg"
+      - Class: Reference
+        Target: ns=3;i=1360
+        Direction: Forward
+    - Name: Simulation
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.10"
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ffffff"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Simulation"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 180.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#000000"
+    - Name: Alarm
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.15"
+    - Name: Open
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.12"
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.14"
+    - Name: Automatic
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.8"
+    - Name: InterlockOpen
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.0"
+    - Name: InterlockClose
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.4"
+    - Name: ManualIcon
+      Type: Image
+      Children:
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/res/Hand_ELEMENT_1.svg"
+      - Name: DynamicColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffa500"
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: SourceAutomatic
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Automatic"
+    - Name: Interlock
+      Type: Image
+      Children:
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/res/LockSymbol_fill.svg"
+      - Name: DynamicColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffa500"
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: SourceinterlockOpen
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../InterlockOpen"
+          - Name: SourceinterlockClose
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../InterlockClose"
+    - Name: ValveStatus
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: LockPassword
+      Type: BaseDataVariableType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: 
+       {
+        "TypeId": {
+         "Id": 252,
+         "Namespace": 1
+        },
+        "Body": {
+         "Hash": [23,183,28,201,222,143,8,65,190,114,84,33,52,87,0,85,100,94,188,193,198,204,2,19,232,148,156,140,37,51,156,52],
+         "Salt": [23,154,53,55,46,172,42,130,145,42,49,197,229,133,6,198,78,33,106,16,76,30,1,150,19,156,72,235,27,240,121,12]
+        }
+       }
+  - Name: Valve3
+    Type: Valve
+    Children:
+    - Name: ValveImage
+      Type: AdvancedSVGImage
+      Children:
+      - Name: SVGElementProperties
+        Type: BaseObjectType
+        Children:
+        - Name: AdvancedSVGImageProperty1
+          Type: AdvancedSVGImageElementProperty
+          Children:
+          - Name: ID
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "leftTriangle"
+          - Name: Property
+            Type: BaseDataVariableType
+            DataType: AdvancedSVGImagePropertyClass
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#808080"
+            Children:
+            - Name: ConditionalConverter1
+              Type: ConditionalConverter
+              Children:
+              - Name: Condition
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../Alarm"
+              - Name: FalseValue
+                Type: BaseDataVariableType
+                DataType: Color
+                ReferenceType: HasParameter
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../Open"
+        - Name: AdvancedSVGImageProperty2
+          Type: AdvancedSVGImageElementProperty
+          Children:
+          - Name: ID
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "rightTriangle"
+          - Name: Property
+            Type: BaseDataVariableType
+            DataType: AdvancedSVGImagePropertyClass
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#808080"
+            Children:
+            - Name: ConditionalConverter1
+              Type: ConditionalConverter
+              Children:
+              - Name: Condition
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../Alarm"
+              - Name: FalseValue
+                Type: BaseDataVariableType
+                DataType: Color
+                ReferenceType: HasParameter
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../Open"
+        - Name: AdvancedSVGImageProperty3
+          Type: AdvancedSVGImageElementProperty
+          Children:
+          - Name: ID
+            Type: BaseDataVariableType
+            DataType: String
+            Value: "semicircle"
+          - Name: Property
+            Type: BaseDataVariableType
+            DataType: AdvancedSVGImagePropertyClass
+          - Name: Value
+            Type: BaseDataVariableType
+            DataType: Color
+            Value: "#808080"
+            Children:
+            - Name: ConditionalConverter1
+              Type: ConditionalConverter
+              Children:
+              - Name: Condition
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ReferenceType: HasSource
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "../../../../../../Alarm"
+              - Name: FalseValue
+                Type: BaseDataVariableType
+                DataType: Color
+                ReferenceType: HasParameter
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "../../../../../../../../Active"
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/imgs/valve_2.svg"
+      - Class: Reference
+        Target: ns=3;i=1360
+        Direction: Forward
+    - Name: Simulation
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.10"
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#ffffff"
+      Children:
+      - Name: ConditionalConverter1
+        Type: ConditionalConverter
+        Children:
+        - Name: Condition
+          Type: BaseDataVariableType
+          DataType: Boolean
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "../../../Simulation"
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 40.0
+    - Name: BorderColor
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#000000"
+    - Name: Alarm
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.15"
+    - Name: Open
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.12"
+    - Name: Active
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.14"
+    - Name: Automatic
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.8"
+    - Name: InterlockOpen
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.0"
+    - Name: InterlockClose
+      Type: BaseDataVariableType
+      DataType: Boolean
+      Value: true
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../ValveStatus.4"
+    - Name: ManualIcon
+      Type: Image
+      Children:
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/res/Hand_ELEMENT_1.svg"
+      - Name: DynamicColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffa500"
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: SourceAutomatic
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../Automatic"
+    - Name: Interlock
+      Type: Image
+      Children:
+      - Name: Path
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=7;%PROJECTDIR%/res/LockSymbol_fill.svg"
+      - Name: DynamicColor
+        Type: BaseDataVariableType
+        DataType: Color
+        Value: "#ffa500"
+      - Name: Visible
+        Type: BaseDataVariableType
+        DataType: Boolean
+        Value: true
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: SourceinterlockOpen
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../InterlockOpen"
+          - Name: SourceinterlockClose
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "../../../../InterlockClose"
+    - Name: ValveStatus
+      Type: BaseDataVariableType
+      DataType: Int16
+    - Name: LockPassword
+      Type: BaseDataVariableType
+      DataType: PasswordHash
+      AccessLevel: Read
+      Value: 
+       {
+        "TypeId": {
+         "Id": 252,
+         "Namespace": 1
+        },
+        "Body": {
+         "Hash": [23,183,28,201,222,143,8,65,190,114,84,33,52,87,0,85,100,94,188,193,198,204,2,19,232,148,156,140,37,51,156,52],
+         "Salt": [23,154,53,55,46,172,42,130,145,42,49,197,229,133,6,198,78,33,106,16,76,30,1,150,19,156,72,235,27,240,121,12]
+        }
+       }
 - File: Screens/Screens.yaml
+- File: Widgets/Widgets.yaml

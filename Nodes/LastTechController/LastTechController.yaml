@@ -1,0 +1,19 @@
+Name: LastTechController
+Type: FolderType
+Children:
+- Name: ns=4;LibraryReference
+  Type: ObjectLibraryReference
+  DataType: ObjectLibraryReferenceDataType
+  Value: 
+   {
+    "TypeId": {
+     "Id": 72,
+     "Namespace": 4
+    },
+    "Body": {
+     "libraryGuid": "d3b36b1bce85f56e2fb08dd52c6c4e10",
+     "objectGuid": "4f637fd30a318ff9e81b53372a96173e",
+     "objectVersion": 1,
+     "highestIgnoredVersion": 0
+    }
+   }

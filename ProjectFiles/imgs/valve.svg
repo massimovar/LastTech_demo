@@ -1,0 +1,9 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <path id="semicircle" d="M 100,0 a 50,50 0 0 1 50,50" fill="#ccc" stroke="black" />
+
+    <polygon id="leftTriangle" points="50,0 100,50 50,100" fill="#ccc" stroke="black" />
+
+    <polygon id="rightTriangle" points="150,0 100,50 150,100" fill="#ccc" stroke="black" />
+  </g>
+</svg>

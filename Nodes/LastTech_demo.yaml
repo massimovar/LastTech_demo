@@ -28,6 +28,10 @@ Children:
       Type: PropertyType
       DataType: NodeId
       Value: "/Types/ObjectTypes/BaseObjectType/FolderType"
+  - Name: AuthenticationMode
+    Type: BaseDataVariableType
+    DataType: AuthenticationMode
+    Value: 3
 - Name: PasswordPolicy
   Type: PasswordPolicy
   Children:
@@ -62,3 +66,4 @@ Children:
 - File: System/System.yaml
 - File: Translations/Translations.yaml
 - File: Retentivity/Retentivity.yaml
+- File: LastTechController/LastTechController.yaml
